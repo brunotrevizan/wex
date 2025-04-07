@@ -7,6 +7,8 @@ The project also provides a postman collection for easy testing. (`Wex.postman_c
 
 The unit tests and integration tests are written using JUnit and Mockito.
 
+The project also runs with Nginx to handle port forwarding and load balancing.
+
 ## Nginx Configuration
 
 The application is set up to use Nginx as a reverse proxy to forward requests to the backend service. Below is a brief explanation of the Nginx configuration used in this project.
@@ -65,6 +67,7 @@ The Swagger UI is available at [http://localhost:8080/swagger-ui/index.html](htt
 * Gradle 7.4
 * Docker
 * OpenAPI 3.0 (Swagger)
+* Nginx
 * Lombok
 
 ## Setup
@@ -112,16 +115,3 @@ Get a currency exchange transaction by ID
 	+ `targetCurrency`: The target currency
 	+ `exchangeRate`: The exchange rate used
 	+ `result`: The result of the exchange (e.g. EUR 10.00)
-
-### GET /transactions
-
-Get all currency exchange transactions
-
-* Response:
-	+ A list of transactions, each containing:
-		- `id`: The ID of the transaction
-		- `description`: Short transaction description
-		- `transactionDate`: Date of transaction
-		- `originalAmount`: The amount of money exchanged
-		- `exchangeRate`: The exchange rate used
-		- `convertedAmount`: The result of the exchange
