@@ -108,6 +108,7 @@ Get a currency exchange transaction by ID
 
 * Path parameter:
 	+ `id`: The ID of the transaction
+	+ `currency`: The currency supported by the [Treasury Reporting Rates of Exchange API](https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/rates_of_exchange)
 * Response:
 	+ `id`: The ID of the transaction
 	+ `amount`: The amount of money exchanged
