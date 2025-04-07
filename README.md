@@ -62,9 +62,8 @@ The Swagger UI is available at [http://localhost:8080/swagger-ui/index.html](htt
 
 ## Technologies
 
-* Spring Boot 2.7.0
+* Spring Boot 3.4.4
 * Java 17
-* Gradle 7.4
 * Docker
 * OpenAPI 3.0 (Swagger)
 * Nginx
