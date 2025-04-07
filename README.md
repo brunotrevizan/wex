@@ -102,7 +102,7 @@ Create a new Transaction
 	+ `transactionDate`: Date of transaction
 	+ `purchaseAmount`: Amount of transaction
 
-### GET /transactions/{id}
+### GET /transactions/{id}?currency={currency}
 
 Get a currency exchange transaction by ID
 
